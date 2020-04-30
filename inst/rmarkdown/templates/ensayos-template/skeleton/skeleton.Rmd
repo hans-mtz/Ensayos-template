@@ -1,0 +1,76 @@
+---
+title: "English title"
+trans-title: "Título en español"
+author:
+- affiliation: University of Somewhere
+  email: first@email.com
+  first: First
+  last: Author
+- affiliation: University of Nowhere
+  email: second@email.com
+  first: Second
+  last: Author
+abstract: This is the abstract.
+resumen: Este es el resumen.
+keywords:
+  eng: Keyword1; Keyword2
+  spa: Palabra1; Palabra2
+JEL: Jel1; Jel2
+bibliography: bibliography.bib
+csl: apa.csl
+firstpage: 1
+lastpage: 20
+month: May
+art-num: 1
+vol: 39
+no: 1
+year: 2020
+date:
+  received: "1 September 2019"
+  accepted: "1 January 2020"
+output:
+  bookdown::pdf_document2:
+    template: template.tex
+    toc: FALSE
+    numbersections: TRUE
+  bookdown::html_document2:
+    template: html-template.html
+    toc: TRUE
+    toc_float: TRUE
+    numbersections: TRUE
+    self_contained: TRUE
+    mathjax-url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Introduction {-}
+
+This is the introduction. If you have created your article in MS WORD is easy to import your text to rmarkdown. Simply use https://word2md.com/. Import your doc or docx file and the software will automatically translate to markdown.In addition, you can check https://update.lib.berkeley.edu/2018/02/07/extracting-references-from-an-already-created-bibliography/ for tips to migrate you bibliography to bibtex.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vestibulum nisl nec lectus sodales tincidunt. Maecenas a vulputate eros, ut tristique sem. Nam eu iaculis sem, a convallis ligula. Sed accumsan ante tristique eros finibus, non eleifend tellus euismod. Pellentesque eu metus porta orci convallis feugiat. Integer aliquet quam tellus, quis feugiat est lacinia et. Vestibulum convallis faucibus eros, ut placerat sem rhoncus vitae. Nullam in euismod mi. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean gravida ut metus in lacinia. Duis euismod fringilla tempus. Etiam semper efficitur cursus. Pellentesque mollis elit aliquet mauris consectetur consectetur. Curabitur mollis interdum suscipit. 
+
+# Section
+
+Etiam pellentesque commodo nisl sed sodales. Quisque quis semper nunc, sit amet luctus sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent rutrum enim in accumsan congue. Cras vel risus sollicitudin, molestie augue vel, consequat mi. Pellentesque egestas lorem nulla, sit amet sodales enim iaculis vitae. Donec quam diam, mattis in leo luctus, placerat tempus magna. Donec eleifend velit a nibh auctor, sed tempor tellus congue. Aenean vestibulum aliquam dignissim. Aliquam et mauris sit amet nulla laoreet mollis non nec quam. Maecenas vitae sapien blandit ex fermentum lacinia vitae imperdiet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam tempus fringilla ipsum, vitae volutpat massa mattis at. Nulla vulputate rhoncus purus, a condimentum sem rhoncus vel.
+
+Fusce lacus est, malesuada eu nisl et, finibus porta tellus. Nam rutrum mauris sed sapien gravida, sed blandit massa tristique. Integer faucibus, nisl nec pretium sodales, erat purus vulputate justo, nec sodales erat magna ac magna. Donec quis sagittis tortor. Maecenas malesuada nec diam eu tincidunt. Aliquam vitae mollis nibh. In sed finibus odio. In aliquam molestie risus quis finibus. Aenean luctus erat sed felis ullamcorper dictum. Fusce egestas porta fermentum. 
+
+## Subsection
+
+Nulla lobortis, erat ac tristique blandit, nisi erat ultrices eros, et laoreet nisl odio sed felis. Pellentesque augue mauris, tempus ac dolor a, tempor faucibus nibh. Fusce efficitur neque id diam gravida fermentum. Suspendisse auctor eros et augue finibus mollis. Maecenas lacinia vel sem non dapibus. Suspendisse tincidunt congue tellus, vel sodales risus eleifend ac. Proin euismod malesuada sem nec elementum. Suspendisse vel lacinia tortor. Aliquam ac lectus cursus, pellentesque mi a, vehicula lorem. Pellentesque leo dui, euismod nec viverra at, rutrum nec libero. 
+
+# Another section
+
+This template also includes a bibliography file, containing a single reference for R Markdown [@R-rmarkdown]. The bibliography will be added to the end of the output document. Etiam pellentesque commodo nisl sed sodales. Quisque quis semper nunc, sit amet luctus sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent rutrum enim in accumsan congue. Cras vel risus sollicitudin, molestie augue vel, consequat mi. Pellentesque egestas lorem nulla, sit amet sodales enim iaculis vitae. Donec quam diam, mattis in leo luctus, placerat tempus magna. Donec eleifend velit a nibh auctor, sed tempor tellus congue. Aenean vestibulum aliquam dignissim. Aliquam et mauris sit amet nulla laoreet mollis non nec quam. Maecenas vitae sapien blandit ex fermentum lacinia vitae imperdiet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam tempus fringilla ipsum, vitae volutpat massa mattis at. Nulla vulputate rhoncus purus, a condimentum sem rhoncus vel.
+
+## Another subsection
+
+Etiam pellentesque commodo nisl sed sodales. Quisque quis semper nunc, sit amet luctus sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent rutrum enim in accumsan congue. Cras vel risus sollicitudin, molestie augue vel, consequat mi. Pellentesque egestas lorem nulla, sit amet sodales enim iaculis vitae. Donec quam diam, mattis in leo luctus, placerat tempus magna. Donec eleifend velit a nibh auctor, sed tempor tellus congue. Aenean vestibulum aliquam dignissim. Aliquam et mauris sit amet nulla laoreet mollis non nec quam. Maecenas vitae sapien blandit ex fermentum lacinia vitae imperdiet arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam tempus fringilla ipsum, vitae volutpat massa mattis at. Nulla vulputate rhoncus purus, a condimentum sem rhoncus vel. $a_{i}^2=b_i^2+c_i^2$.
+
+$$E=mc^2$$
+
+# References
